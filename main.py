@@ -69,7 +69,7 @@ def analyze_portfolio(profile: InvestorProfile):
     # =========================
     simulated_assets = run_monte_carlo(
         returns_array,
-        num_simulations=8000,
+        num_simulations=2000,
         num_days=num_days
     )
 
@@ -127,4 +127,5 @@ def analyze_portfolio(profile: InvestorProfile):
         "engine": "Student-t Monte Carlo + Shrinkage + CVaR"
 
     }
+
 
